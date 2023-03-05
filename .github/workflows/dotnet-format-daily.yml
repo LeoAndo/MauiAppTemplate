@@ -29,7 +29,7 @@ jobs:
 
       # https://learn.microsoft.com/ja-jp/dotnet/core/tools/dotnet-format
       - name: Run dotnet format
-        run: dotnet format .\MauiGithubSearch.sln --no-restore
+        run: dotnet format .\MauiAppTemplate.sln --no-restore
     
       - name: Commit files
         if: steps.format.outputs.has-changes == 'true'
